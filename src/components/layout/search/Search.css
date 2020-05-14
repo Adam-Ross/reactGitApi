@@ -1,0 +1,36 @@
+.searchForm {
+  margin-top: 1rem;
+}
+
+.searchForm .searchField {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid var(--dark);
+  transition: padding 0.5s ease;
+}
+
+.searchForm .searchField:focus {
+  outline: none;
+  padding: 1rem;
+}
+
+.searchForm .submitBtn {
+  color: var(--white);
+  background: var(--dark);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  transition: background 0.5s ease;
+}
+
+.searchForm .submitBtn:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+
+.searchForm .sumbitBtn:focus {
+  outline: none;
+}

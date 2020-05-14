@@ -5,4 +5,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "ABeeZee", sans-serif;
+  --dark: #00263b;
+  --blue: #00a1ab;
+  --white: #f4f4f4;
+  --black: #333;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin: auto;
+  }
 }

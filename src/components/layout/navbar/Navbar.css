@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--blue);
+  color: var(--white);
+}
+
+.navbar h1 {
+  font-style: italic;
+}
+
+#navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navList li {
+  padding: 0 1rem;
+  list-style: none;
+  transition: color 0.5s ease;
+}
+
+#navList li:hover {
+  cursor: pointer;
+  color: var(--dark);
+}

@@ -1,12 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
+import Navbar from "./components/layout/navbar/Navbar";
+import Search from "./components/layout/search/Serach";
+import GithubState from "./context/github/GithubState";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Working</h1>
-    </div>
+    <GithubState>
+      <div className="App">
+        <Navbar />
+        <div className="container">
+          <Search />
+        </div>
+      </div>
+    </GithubState>
   );
 }
 
