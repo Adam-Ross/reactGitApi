@@ -5,7 +5,7 @@ import GithubReducer from "./githubReducer";
 
 import {
   SEARCH_USERS,
-  GET_USERS,
+  GET_USER,
   CLEAR_USERS,
   GET_REPOS,
   SET_LOADING,
@@ -35,7 +35,13 @@ const GithubState = (props) => {
   };
 
   // Get user
+  const getUser = async (login) => {
+    setLoading();
 
+    const res = await axios.get(`https://api.github.com/users/${login}`);
+
+    dispatch({ type: GET_USER, payload: res.data });
+  };
   // Get repos
 
   // Clear users
@@ -53,6 +59,7 @@ const GithubState = (props) => {
         user: state.user,
         searchUsers,
         clearUsers,
+        getUser,
       }}
     >
       {props.children}

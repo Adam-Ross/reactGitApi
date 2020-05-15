@@ -1,5 +1,6 @@
 import React from "react";
 import "./UserItem.css";
+import { Link } from "react-router-dom";
 
 const UserItem = ({ user, loading }) => {
   const { avatar_url, login, location } = user;
@@ -9,9 +10,9 @@ const UserItem = ({ user, loading }) => {
       <img src={avatar_url} alt="" />
       <h1>{login}</h1>
       <p>{location}</p>
-      <a href="#" className="profileBtn">
+      <Link to={`/user/${login}`} className="profileBtn">
         Profile
-      </a>
+      </Link>
     </div>
   );
 };
