@@ -31,12 +31,23 @@ const User = (props) => {
     <Fragment>
       <div className="userCard">
         <div className="userInfo">
-          <img src={avatar_url} alt="" style={{ width: "200px" }} />
+          <img
+            src={avatar_url}
+            alt=""
+            style={{ width: "200px", marginRight: "1rem" }}
+          />
           <h1>{login}</h1>
           <p>{location}</p>
         </div>
         <div className="userData">
-          {bio && <p className="bio">{bio}</p>}
+          {!bio || bio.split(" ").length < 15 ? (
+            <p className="bio">
+              'To live is to dare, to dare is to care, to care is to matter, to
+              matter is to matter.'
+            </p>
+          ) : (
+            <p className="bio">{bio}</p>
+          )}
           <a href={html_url} target="_blank" className="profile">
             Profile
           </a>

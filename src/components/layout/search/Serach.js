@@ -27,6 +27,11 @@ const Search = () => {
     clearInput();
   };
 
+  const clearUsersAndClearComponentState = () => {
+    clearUsers();
+    setText("");
+  };
+
   const clearInput = () => {
     const searchField = document.querySelector(".searchField");
     searchField.value = "";
@@ -47,7 +52,7 @@ const Search = () => {
         <input type="submit" className="submitBtn" />
       </form>
       {users.length > 0 && (
-        <div className="clearBtn" onClick={clearUsers}>
+        <div className="clearBtn" onClick={clearUsersAndClearComponentState}>
           Clear users
         </div>
       )}

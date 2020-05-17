@@ -1,3 +1,30 @@
+.blog {
+  background: var(--white);
+  color: var(--dark);
+  width: 100%;
+  text-decoration: none;
+  margin: auto;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile {
+  color: var(--white);
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  display: block;
+  background: var(--blue);
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .userCard {
   display: flex;
   justify-content: space-between;
@@ -18,11 +45,17 @@
 .userData {
   background: var(--dark);
   color: var(--white);
+  padding: 1rem;
+}
+
+.userBlock {
+  padding: 1rem;
 }
 
 .userData .bio {
   font-size: 2rem;
   font-style: italic;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 500px) {
