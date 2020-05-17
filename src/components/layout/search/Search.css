@@ -9,6 +9,7 @@
   font-size: 2rem;
   padding: 0.5rem;
   border: none;
+  color: var(--dark);
   border-bottom: 1px solid var(--dark);
   transition: padding 0.5s ease;
 }
@@ -49,4 +50,23 @@
 .clearBtn:hover {
   background: var(--blue);
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .searchForm {
+    margin: 1rem;
+  }
+  .searchForm .submitBtn {
+    width: 100%;
+  }
+
+  .searchForm .submit:focus {
+    outline: none;
+  }
+
+  .clearBtn {
+    margin: 0 1rem;
+    display: block;
+    text-align: center;
+  }
 }

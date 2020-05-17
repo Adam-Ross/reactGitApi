@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "ABeeZee", sans-serif;
+  font-family: "Oswald", sans-serif;
   --dark: #00263b;
   --blue: #00a1ab;
   --white: #f4f4f4;
@@ -12,8 +12,13 @@
 }
 
 .container {
-  max-width: 1200px;
-  width: 100%;
+  max-width: 1000px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: none;
+  }
 }
 
 @media (min-width: 1200px) {
